@@ -8,7 +8,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
-          Adding as a test.
+          Testing with Master branch and Master branch used as the pages branch.
         </p>
         <a
           className="App-link"
