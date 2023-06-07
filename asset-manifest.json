@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/cv-mountains/static/css/main.073c9b0a.css",
-    "main.js": "/cv-mountains/static/js/main.8bf6af42.js",
+    "main.css": "/cv-mountains/static/css/main.40889cd4.css",
+    "main.js": "/cv-mountains/static/js/main.b1ec7668.js",
     "static/js/787.c34a4d21.chunk.js": "/cv-mountains/static/js/787.c34a4d21.chunk.js",
     "static/media/logo.svg": "/cv-mountains/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/cv-mountains/index.html",
-    "main.073c9b0a.css.map": "/cv-mountains/static/css/main.073c9b0a.css.map",
-    "main.8bf6af42.js.map": "/cv-mountains/static/js/main.8bf6af42.js.map",
+    "main.40889cd4.css.map": "/cv-mountains/static/css/main.40889cd4.css.map",
+    "main.b1ec7668.js.map": "/cv-mountains/static/js/main.b1ec7668.js.map",
     "787.c34a4d21.chunk.js.map": "/cv-mountains/static/js/787.c34a4d21.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.8bf6af42.js"
+    "static/css/main.40889cd4.css",
+    "static/js/main.b1ec7668.js"
   ]
 }
