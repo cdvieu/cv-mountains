@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+import mountains from './mountains.png';
 import './App.css';
 import Table from './Table';
+import PhotoIcon from '@mui/icons-material/Photo';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-          Testing with Master branch and Master branch used as the pages branch.
+        <img src={mountains} alt="mountains" />
+        <p style={{ color: '#000000' }}>
+          The New Hampshire 4000-footers
+          <br/><br/>
           <Table />
         </p>
-        <a
+        {/* <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a> */}
       </header>
     </div>
   );

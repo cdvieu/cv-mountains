@@ -8,16 +8,17 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { makeStyles } from '@mui/styles';
 
-function createData(name, date, height, carbs, protein) {
-  return { name, date, height, carbs, protein };
+function createData(number, name, year, date, height, peakBagged, distance, hikeTime, details) {
+  return { number, name, year, date, height, peakBagged, distance, hikeTime, details };
 }
 
 const rows = [
-  createData('Mount Washington', '7/5/2014', "5000'", 24, 4.0),
-  createData('Mount Osceola', 237, 9.0, 37, 4.3),
-  createData('Eclair', 262, 16.0, 24, 6.0),
-  createData('Cupcake', 305, 3.7, 67, 4.3),
-  createData('Gingerbread', 356, 16.0, 49, 3.9),
+  createData('1', 'Mount Washington', '2014, 2017','7/5/2014', "6288'", 'None', '?', '?', 'Tuckerman Ravine -> Summit -> Shuttle & Lion Head'),
+  createData('2', 'Moosilauke', '2016, 2019', '7/3/2016', '4802', 'None',	'7.5 & 10', '?', '?')
+  // createData('Mount Moosilauke', '7/5/2014', "5000'", 24, 4.0),
+  // createData('Mount Tecumseh', '7/5/2014', "5000'", 24, 4.0),
+  // createData('Mount Lincoln', '7/5/2014', "5000'", 24, 4.0),
+  // createData('Mount Osceola', '7/5/2014', "5000'", 24, 4.0),
 ];
 
 const useStyles = makeStyles({
@@ -37,11 +38,16 @@ export default function BasicTable() {
         <TableHead>
           {/* <TableRow className={classes.root}> */}
           <TableRow>
-            <TableCell>Name</TableCell>
-            <TableCell align="right">Date</TableCell>
-            <TableCell align="right">Height&nbsp;(g)</TableCell>
-            <TableCell align="right">Carbs&nbsp;(g)</TableCell>
-            <TableCell align="right">Protein&nbsp;(g)</TableCell>
+            {/* <TableCell>Name</TableCell> */}
+            <TableCell align="left"><b>#</b></TableCell>
+            <TableCell align="left"><b>Mountain</b></TableCell>
+            <TableCell align="left"><b>Year</b></TableCell>
+            <TableCell align="left"><b>Date</b></TableCell>
+            <TableCell align="left"><b>Height</b></TableCell>
+            <TableCell align="left"><b>Peak Bagged</b></TableCell>
+            <TableCell align="left"><b>Distance</b></TableCell>
+            <TableCell align="left"><b>Hike Time</b></TableCell>
+            <TableCell align="left"><b>Trail Details</b></TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -50,13 +56,18 @@ export default function BasicTable() {
               key={row.name}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
-              <TableCell component="th" scope="row">
+              {/* <TableCell component="th" scope="row">
                 {row.name}
-              </TableCell>
-              <TableCell align="right">{row.date}</TableCell>
-              <TableCell align="right">{row.height}</TableCell>
-              <TableCell align="right">{row.carbs}</TableCell>
-              <TableCell align="right">{row.protein}</TableCell>
+              </TableCell> */}
+              <TableCell align="left">{row.number}</TableCell>
+              <TableCell align="left">{row.name}</TableCell>
+              <TableCell align="left">{row.year}</TableCell>
+              <TableCell align="left">{row.date}</TableCell>
+              <TableCell align="left">{row.height}</TableCell>
+              <TableCell align="left">{row.peakBagged}</TableCell>
+              <TableCell align="left">{row.distance}</TableCell>
+              <TableCell align="left">{row.hikeTime}</TableCell>
+              <TableCell align="left">{row.details}</TableCell>
             </TableRow>
           ))}
         </TableBody>
