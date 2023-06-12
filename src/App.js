@@ -2,6 +2,7 @@ import mountains from './mountains.png';
 import './App.css';
 import Table from './Table';
 import PhotoIcon from '@mui/icons-material/Photo';
+import Grid from '@mui/material/Grid';
 
 function App() {
   return (
@@ -11,7 +12,9 @@ function App() {
         <p style={{ color: '#000000' }}>
           The New Hampshire 4000-footers
           <br/><br/>
+          <Grid item xs={12}>
           <Table />
+          </Grid>
         </p>
         {/* <a
           className="App-link"

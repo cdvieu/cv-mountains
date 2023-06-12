@@ -14,11 +14,18 @@ function createData(number, name, year, date, height, peakBagged, distance, hike
 
 const rows = [
   createData('1', 'Mount Washington', '2014, 2017','7/5/2014', "6288'", 'None', '?', '?', 'Tuckerman Ravine -> Summit -> Shuttle & Lion Head'),
-  createData('2', 'Moosilauke', '2016, 2019', '7/3/2016', '4802', 'None',	'7.5 & 10', '?', '?')
-  // createData('Mount Moosilauke', '7/5/2014', "5000'", 24, 4.0),
-  // createData('Mount Tecumseh', '7/5/2014', "5000'", 24, 4.0),
-  // createData('Mount Lincoln', '7/5/2014', "5000'", 24, 4.0),
-  // createData('Mount Osceola', '7/5/2014', "5000'", 24, 4.0),
+  createData('2', 'Moosilauke', '2016, 2019', '7/3/2016', '4802', 'None',	'7.5 & 10', '?', '?'),
+  createData('3', 'Tecumseh', '2016',	'N/A', "4003'", 'None', 'N/A', 'N/A', 'N/A'),
+  createData('4', 'Lincoln', '2016', 'N/A', "5089'", 'Lafayette, Haystack', '8.6', '8-9', 'N/A'),
+  createData('5', 'Lafayette', '2016', 'N/A',	"5260'", 'Lincoln, Haystack',	'8.6', '8-9',	'N/A'),
+  createData('6', 'Osceola', '2016, 2020', 'N/A', "4340'", 'East Osceola', 'N/A',	'N/A', 'Carried Lucy down until she saw a cat in a backpack, which gave her a 2nd wind')
+// East Osceola	2016	?	4156'	Osceola	N/A	N/A	N/A
+// Pierce	2017	9/23/2017	4310'	Eisenhower	N/A	N/A	N/A
+// Cannon	2017	9/9/2017	4100'	None	N/A	N/A	N/A
+// Eisenhower	2017	9/23/2017	4780'	Pierce	N/A	N/A	N/A
+// Garfield	2017	9/24/2017	4500'	None	N/A	N/A	N/A
+// Jackson	2017	5/21/2017	4052'	Webster	N/A	N/A	N/A
+// Galehead	2017	9/10/2017	4024'	None	N/A	N/A	N/A
 ];
 
 const useStyles = makeStyles({
