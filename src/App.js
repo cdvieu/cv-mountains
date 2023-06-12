@@ -11,19 +11,11 @@ function App() {
         <img src={mountains} alt="mountains" />
         <p style={{ color: '#000000' }}>
           The New Hampshire 4000-footers
-          <br/><br/>
+          <br /><br />
           <Grid item xs={12}>
-          <Table />
+            <Table />
           </Grid>
         </p>
-        {/* <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a> */}
       </header>
     </div>
   );
